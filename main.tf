@@ -42,7 +42,8 @@ resource "aws_security_group_rule" "blog_https_in" {
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 
-  security_group_id = aws_security_group.blog_in" 
+  security_group_id = aws_security_group.blog_in"
+
 }
 
 resource "aws_security_group_rule" "blog_http_in" {
@@ -52,7 +53,8 @@ resource "aws_security_group_rule" "blog_http_in" {
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 
-  security_group_id = aws_security_group.blog_in" 
+  security_group_id = aws_security_group.blog_in"
+
 }
 
 resource "aws_security_group_rule" "blog_everything_out" {
@@ -62,5 +64,6 @@ resource "aws_security_group_rule" "blog_everything_out" {
   protocol    = "-1"
   cidr_blocks = ["0.0.0.0/0"]
 
-  security_group_id = aws_security_group.blog_in" 
+  security_group_id = aws_security_group.blog_in"
+   
 }
